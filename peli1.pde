@@ -320,23 +320,15 @@ void draw() {
   fill(#743A16);
   rect(0, height-60, width, 60);
   fill(#C65108);
-  maa(0);
-  maa(80);
-  maa(160);
-  maa(240);
-  maa(320);
-  maa(400);
-  maa(480);
-  maa(560);
-  maa(640);
-  maa(720);
-  maa(800);
-  maa(880);
-  maa(960);
-  maa(1040);
-  maa(1120);
-  maa(1200);
-  maa(1280);
+  maa(q);
+  maa(e);
+  maa(r);
+  maa(t);
+  maa(u);
+  maa(i);
+  maa(o);
+  maa(p);
+
   
   stroke(0);
 palikka1.move();
