@@ -16,6 +16,14 @@ float s;
 float d;
 float f;
 float m;
+float q;
+float e;
+float r;
+float t;
+float u;
+float i;
+float o;
+float p;
 PVector jep;
 PVector location;
 PVector velocity;  
@@ -23,11 +31,11 @@ PVector gravity;
 int score1;
 int score2;
 float speed;
-float radius;   
+float nopeus;
+float radius;    
 Pelaaja pelaaja;
 Palikka1 palikka1;
 void setup() {
-  //fullScreen();
   size(1350,630);
   pelaaja=new Pelaaja();
   palikka1=new Palikka1();
@@ -35,6 +43,15 @@ font= loadFont("SNAP8.vlw");
   textFont(font);
     score1 = 0;
     score2=0;
+    q=0;
+    e=200;
+    r=400;
+    t=600;
+    u=800;
+    i=1000;
+    o=1200;
+    p=1400;
+    nopeus=-4;
 }
 
 class Palikka1{
@@ -53,41 +70,40 @@ class Palikka1{
     f=390;
    
   }
-      void move(){
+void move(){
              
-            x=x+speed;
+      x=x+speed;
       if(x<-25){
        x=width;
-       a=200+random(0,150);
+       a=300+random(-150,150);
      }
      y=y+speed;
      if(y<-25){
        y=width;
-       f=390+random(0,150);
+       f=490+random(-150,150);
      }
      z=z+speed;
      if(z<-25){
        z=width;
-       s=200+random(0,150);
+       s=300+random(-150,150);
      }
      w=w+speed;
      if(w<-25){
        w=width;
-       d=300+random(0,150);
+       d=300+random(-150,150);
      }
   stroke(0);
   strokeWeight(2);
 
- 
-  fill(#0C9803);
-  rect(x, a+100,80,500);
-  rect(y,f+100,80,500);
-  rect(w,d+100,80,500);
-  rect(z,s+100,80,500);
-  rect(x+80,a-100,-80,-500);
-  rect(y+80,f-100,-80,-500);
-  rect(w+80,d-100,-80,-500);
-  rect(z+80,s-100,-80,-500 );
+ fill(#0C9803);
+  rect(x, a+100,80,700);
+  rect(y,f+100,80,700);
+  rect(w,d+100,80,700);
+  rect(z,s+100,80,700);
+  rect(x+80,a-100,-80,-700);
+  rect(y+80,f-100,-80,-700);
+  rect(w+80,d-100,-80,-700);
+  rect(z+80,s-100,-80,-700 );
         rect(x-10, a+90,100,10);
         rect(y-10,f+90,100,10);
         rect(w-10,d+90,100,10);
@@ -218,6 +234,7 @@ void tarkistatormays(){
    location.x=-0;
     location.y=height+30;
     m=0;
+	nopeus=0;
     speed=0;
      fill(255);
      textSize(100);
@@ -249,41 +266,56 @@ void tarkistatormays(){
 
 
 void draw() {
+  q=q+nopeus;
+    e=e+nopeus;
+      r=r+nopeus;
+        t=t+nopeus;
+          u=u+nopeus;
+            i=i+nopeus;
+              o=o+nopeus;
+                p=p+nopeus;
+  if(q<-190){
+    q=1400;
+  }
+   if(e<-190){
+    e=1400;
+  }
+  if(r<-190){
+    r=1400;
+  }
+  if(t<-190){
+    t=1400;
+  }
+  if(u<-190){
+    u=1400;
+  }
+  if(i<-190){
+    i=1400;
+  }
+  if(o<-190){
+    o=1400;
+  }
+  if(p<-190){
+    p=1400;
+  }
    background(#2C48CE);
     noStroke();
   fill(#3FBCE8,40);
    tausta(0,0); 
    tausta(700,0);
   stroke(2);
-  noStroke();
-  fill(#27DE1B);
-  ruoho(0,height-70);
-  ruoho(200,height-70);
-  ruoho(400,height-70);
-  ruoho(600,height-70);
-  ruoho(800,height-70);
-  ruoho(1000,height-70);
-  ruoho(1200,height-70);
-  ruoho(1400,height-70);
-  ruoho(1600,height-70);
-  ruoho(1800,height-70);
-  ruoho(2000,height-70);
-  
-  stroke(0);
+
 
   noStroke();
   fill(#27DE1B);
-  ruoho(0,height-70);
-  ruoho(200,height-70);
-  ruoho(400,height-70);
-  ruoho(600,height-70);
-  ruoho(800,height-70);
-  ruoho(1000,height-70);
-  ruoho(1200,height-70);
-  ruoho(1400,height-70);
-  ruoho(1600,height-70);
-  ruoho(1800,height-70);
-  ruoho(2000,height-70);
+  ruoho(q,height-70);
+  ruoho(e,height-70);
+  ruoho(r,height-70);
+  ruoho(t,height-70);
+  ruoho(u,height-70);
+  ruoho(i,height-70);
+  ruoho(o,height-70);
+  ruoho(p,height-70);
   rect(0, height-70, width, 10);
   fill(#743A16);
   rect(0, height-60, width, 60);
@@ -340,9 +372,18 @@ void keyPressed(){
   gravity = new PVector(0,1);
  x=width;
     speed=-4;
+    nopeus=-4;
     y=width+350;
     z=width+700;
     w=width+1050;
+    q=0;
+    e=200;
+    r=400;
+    t=600;
+    u=800;
+    i=1000;
+    o=1200;
+    p=1400;
   m=-12;
 score1=0;
   lost = false;
