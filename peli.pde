@@ -247,7 +247,7 @@ void tarkistatormays(){
     k=40;
 	nopeus=0;
     speed=0;
-    h=500;
+    h=420;
      fill(0);
      textSize(100);
      text("Game Over", 430, 150);
