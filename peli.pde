@@ -239,6 +239,8 @@ void tarkistatormays(){
   
 }
   void gameOver(){
+  fill(150);
+  rect(550, height/2-30, 320, 150 )
    location.x=-0;
     location.y=height+30;
     m=0;
