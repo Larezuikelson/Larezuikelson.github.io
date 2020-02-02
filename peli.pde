@@ -240,7 +240,7 @@ void tarkistatormays(){
 }
   void gameOver(){
   fill(150);
-  rect(550, height/2-30, 300, 200 );
+  rect(520, height/2-30, 300, 200 );
 
    location.x=-0;
     location.y=height+30;
