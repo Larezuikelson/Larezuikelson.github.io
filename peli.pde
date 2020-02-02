@@ -251,6 +251,7 @@ void tarkistatormays(){
 	nopeus=0;
     speed=0;
     h=420;
+    fill(0);
             textSize(k);
   text("Points: " + score1 , g, h-10);
 text("Highscore: " + score2 , j, h+25);
