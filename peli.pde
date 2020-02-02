@@ -242,12 +242,12 @@ void tarkistatormays(){
    location.x=-0;
     location.y=height+30;
     m=0;
-    g=width/2-100;
-    j=width/2-125;
+    g=width/2-80;
+    j=width/2-105;
     k=40;
 	nopeus=0;
     speed=0;
-    h=400;
+    h=500;
      fill(0);
      textSize(100);
      text("Game Over", 430, 150);
