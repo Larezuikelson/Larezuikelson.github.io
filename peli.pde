@@ -240,7 +240,7 @@ void tarkistatormays(){
 }
   void gameOver(){
   fill(150);
-  rect(550, height/2-30, 280, 200 );
+  rect(550, height/2-30, 250, 200 );
 
    location.x=-0;
     location.y=height+30;
@@ -253,10 +253,6 @@ void tarkistatormays(){
     h=420;
             textSize(k);
   text("Points: " + score1 , g, h-10);
-  tarkistatormays();
-  text("Points: " + score1 , g, h-10);
-
-text("Highscore: " + score2 , j, h+25);
 text("Highscore: " + score2 , j, h+25);
      fill(0);
      textSize(100);
