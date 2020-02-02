@@ -253,7 +253,7 @@ void tarkistatormays(){
     h=420;
     fill(0);
             textSize(k);
-  text("Points: " + score1 , g, h-10);
+  text("Points: " + score1 , g+15, h-10);
 text("Highscore: " + score2 , j, h+25);
      fill(0);
      textSize(100);
