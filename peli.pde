@@ -239,9 +239,21 @@ void tarkistatormays(){
   
 }
   void gameOver(){
+  
   fill(150);
   rect(535, height/2-30, 300, 200 );
-
+ fill(255, 255, 0);
+    ellipse(535, height/2-30, radius, radius);
+     fill(255);
+    ellipse(535-9, height/2-30-2, 14, 14);
+    ellipse(535535535535535+9, height/2-30-2, 14, 14);
+    fill(0);
+    ellipse(535535535535-9, height/2-30-2, 8, 8);
+    ellipse(535535535+9, height/2-30-2, 8, 8);
+    fill(#F56F6F);
+    triangle(535535-8, height/2-30+6, 535, height/2-30-2, 535535+8, height/2-30+6);
+    fill(#644646);
+    ellipse535,height/2-30+8, 18, 5);
    location.x=-0;
     location.y=height+30;
     m=0;
