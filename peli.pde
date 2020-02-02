@@ -131,7 +131,7 @@ class Pelaaja{
   gravity = new PVector(0,1);
   radius=50;
     g=100;
-  h=600;
+  h=550;
   j=100;
   k=30;
     }
@@ -404,7 +404,7 @@ void keyPressed(){
     p=1400;
   m=-12;
   g=100;
-h=600;
+h=550;
 j=100;
 k=30;
 score1=0;
