@@ -128,7 +128,7 @@ class Pelaaja{
   radius=50;
     }
     void liike(){
-      fill(255);
+      fill(0);
    textSize(30);
   text("Points: " + score1 , 100, 490);
   tarkistatormays();
@@ -236,7 +236,7 @@ void tarkistatormays(){
     m=0;
 	nopeus=0;
     speed=0;
-     fill(255);
+     fill(0);
      textSize(100);
      text("Game Over", 430, 150);
      strokeWeight(2);
