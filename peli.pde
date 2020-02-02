@@ -24,6 +24,10 @@ float u;
 float i;
 float o;
 float p;
+float g;
+float h;
+float j;
+float k;
 PVector jep;
 PVector location;
 PVector velocity;  
@@ -126,16 +130,20 @@ class Pelaaja{
   velocity = new PVector(0,0.02);
   gravity = new PVector(0,1);
   radius=50;
+    g=100;
+  h=600;
+  j=100;
+  k=30;
     }
     void liike(){
       fill(0);
-   textSize(30);
-  text("Points: " + score1 , 100, 490);
+      textSize(k);
+  text("Points: " + score1 , g, h-10);
   tarkistatormays();
-  text("Points: " + score1 , 100, 490);
+  text("Points: " + score1 , g, h-10);
 
-text("Highscore: " + score2 , 100, 525);
-text("Highscore: " + score2 , 100, 525);
+text("Highscore: " + score2 , j, h+25);
+text("Highscore: " + score2 , j, h+25);
               if(score1>score2){
                    score2=score1;
              }
@@ -234,6 +242,9 @@ void tarkistatormays(){
    location.x=-0;
     location.y=height+30;
     m=0;
+    g=width/2-100;
+    j=width/2-125;
+    k=40;
 	nopeus=0;
     speed=0;
      fill(0);
@@ -391,6 +402,10 @@ void keyPressed(){
     o=1200;
     p=1400;
   m=-12;
+  g=100;
+h=600;
+j=100;
+k=30;
 score1=0;
   lost = false;
 
