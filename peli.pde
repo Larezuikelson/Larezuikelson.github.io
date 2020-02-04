@@ -79,22 +79,22 @@ void move(){
       x=x+speed;
       if(x<-25){
        x=width;
-       a=300+random(-150,150);
+       a=300+random(-150,200);
      }
      y=y+speed;
      if(y<-25){
        y=width;
-       f=300+random(-150,150);
+       f=300+random(-150,200);
      }
      z=z+speed;
      if(z<-25){
        z=width;
-       s=300+random(-150,150);
+       s=300+random(-150, 200);
      }
      w=w+speed;
      if(w<-25){
        w=width;
-       d=300+random(-150,150);
+       d=300+random(-150,200);
      }
   stroke(0);
   strokeWeight(2);
