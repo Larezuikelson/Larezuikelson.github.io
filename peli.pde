@@ -477,7 +477,7 @@ pelaaja.show();
 }
 
 void keyPressed(){
-   if (keyCode==27) { 
+   if (keyCode==48) { 
          pause=true;
         velocity = new PVector(0,0);
   gravity = new PVector(0,0);
@@ -485,11 +485,8 @@ speed=0;
 m=0;
 strokeWeight(2);
 L=255;
-  
-   fill(0);
-       textSize(40);
    }
-      if (keyPressed&&(pause==true)&&keyCode!=27) { 
+      if (keyPressed&&(pause==true)&&keyCode!=48) { 
 takaisin();
    }
  if (keyCode == 32){
