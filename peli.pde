@@ -28,6 +28,7 @@ float g;
 float h;
 float j;
 float k;
+ color e;
 PVector jep;
 PVector location;
 PVector velocity;  
@@ -56,6 +57,7 @@ font= loadFont("SNAP8.vlw");
     o=1200;
     p=1400;
     nopeus=-4;
+     e=0;
 }
 
 class Palikka1{
@@ -416,10 +418,80 @@ palikka1.move();
 pelaaja.liike();
 pelaaja.show();
 fill(0);
-
+ stroke(0,0,0,e);
+                             fill(150,0,0,e);
+                            rect(535, height/2-30, 300, 200 );
+                           fill(255, 255, 0,e);
+                              ellipse(535, height/2-30, radius, radius);
+                               fill(255,255,255,e);
+                              ellipse(535-9, height/2-30-2, 14, 14);
+                              ellipse(535+9, height/2-30-2, 14, 14);
+                              fill(0,0,0,e);
+                              ellipse(535-9, height/2-30-2, 8, 8);
+                              ellipse(535+9, height/2-30-2, 8, 8);
+                              fill(#F56F6F,e);
+                              triangle(535-8, height/2-30+6, 535, height/2-30-2, 535+8, height/2-30+6);
+                              fill(#644646,e);
+                              ellipse(535,height/2-30+8, 18, 5);
+                                 fill(255, 255, 0,e);
+                                ellipse(535+300, height/2-30, radius, radius);
+                                 fill(255,255,255,e);
+                                ellipse(535+300-9, height/2-30-2, 14, 14);
+                                ellipse(535+300+9, height/2-30-2, 14, 14);
+                                fill(0,0,0,e);
+                                ellipse(535+300-9, height/2-30-2, 8, 8);
+                                ellipse(535+300+9, height/2-30-2, 8, 8);
+                                fill(#F56F6F,e);
+                                triangle(535+300-8, height/2-30+6, 535+300, height/2-30-2, 535+300+8, height/2-30+6);
+                                fill(#644646,e);
+                                ellipse(535+300,height/2-30+8, 18, 5);
+                                   fill(255, 255, 0,e);
+                                  ellipse(535+300, height/2-30+200, radius, radius);
+                                   fill(255,255,255,e);
+                                  ellipse(535+300-9, height/2-30-2+200, 14, 14);
+                                  ellipse(535+300+9, height/2-30-2+200, 14, 14);
+                                  fill(0,0,0,e);
+                                  ellipse(535+300-9, height/2-30-2+200, 8, 8);
+                                  ellipse(535+300+9, height/2-30-2+200, 8, 8);
+                                  fill(#F56F6F,e);
+                                  triangle(535+300-8, height/2-30+6+200, 535+300, height/2-30-2+200, 535+300+8, height/2-30+6+200);
+                                  fill(#644646,e);
+                                  ellipse(535+300,height/2-30+8+200, 18, 5);
+                                    fill(255, 255, 0,e);
+                                    ellipse(535, height/2-30+200, radius, radius);
+                                     fill(255,255,255,e);
+                                    ellipse(535-9, height/2-30-2+200, 14, 14);
+                                    ellipse(535+9, height/2-30-2+200, 14, 14);
+                                    fill(0,0,0,e);
+                                    ellipse(535-9, height/2-30-2+200, 8, 8);
+                                    ellipse(535+9, height/2-30-2+200, 8, 8);
+                                    fill(#F56F6F,e);
+                                    triangle(535-8, height/2-30+6+200, 535, height/2-30-2+200, 535+8, height/2-30+6+200);
+                                    fill(#644646,e);
+                                    ellipse(535,height/2-30+8+200, 18, 5);
+                                    fill(0,0,0,e);
+                                    text("Press any key", 580, height/2+45);
+                                    text("to", 670, height/2+75);
+                                    textSize(45);
+                                    text("CONTINUE", 570, height/2+115);
 }
 
-void keyPressed(){   
+void keyPressed(){
+   if (keyCode==27) { 
+         pause=true;
+        velocity = new PVector(0,0);
+  gravity = new PVector(0,0);
+speed=0; 
+m=0;
+strokeWeight(2);
+e=255;
+  
+   fill(0);
+       textSize(40);
+   }
+      if (keyPressed&&(pause==true)&&keyCode!=27) { 
+takaisin();
+   }
  if (keyCode == 32){
    velocity.y =m; 
     m=-12;
@@ -536,6 +608,13 @@ void pilvi (float x,float y){
   ellipse(x+35, y+10,50,50);
   ellipse(x+70, y+10,50,50);
 } 
-  
+ void takaisin(){
+  e=0;
+    velocity = new PVector(0,0.02);
+  gravity = new PVector(0,1);
+speed=-4; 
+m=-12;
+pause=false;
+} 
   
   
