@@ -415,9 +415,11 @@ void draw() {
 palikka1.move();
 pelaaja.liike();
 pelaaja.show();
-
+fill(0);
 
 }
+
+void keyPressed(){   
  if (keyCode == 32){
    velocity.y =m; 
     m=-12;
@@ -533,7 +535,4 @@ void pilvi (float x,float y){
   ellipse(x+105, y, 50, 50);
   ellipse(x+35, y+10,50,50);
   ellipse(x+70, y+10,50,50);
-} 
- 
-  
-  
+}
