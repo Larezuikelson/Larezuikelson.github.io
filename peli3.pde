@@ -33,7 +33,7 @@ float radius;
 Pelaaja pelaaja;
 Palikka1 palikka1;
 void setup() {
-  fullScreen();
+  size(1200,500);
   pelaaja=new Pelaaja();
   palikka1=new Palikka1();
 font= loadFont("SNAP8.vlw");
