@@ -334,6 +334,7 @@ speed=0;
   nopeus=0;
     speed=0;
 m=0;
+c=0;
 reset();
  }
  if (keyPressed&&(pause==true)&&keyCode!=48) { 
@@ -427,7 +428,6 @@ void draw() {
 palikka1.move();
 pelaaja.liike();
 pelaaja.show();
-fill(0);
    stroke(0,0,0,c);
                              fill(150,0,0,c);
                             rect(535, height/2-30, 300, 200 );
