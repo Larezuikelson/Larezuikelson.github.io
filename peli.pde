@@ -496,7 +496,7 @@ c=255;
   
 
    }
-      if (keyPressed&&(pause==true)&&key!='0') { 
+      if (keyPressed&&(pause==true)&&key=='1') { 
 takaisin();
    }
  if (keyCode == 32){
