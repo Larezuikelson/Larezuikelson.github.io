@@ -336,9 +336,6 @@ speed=0;
 m=0;
 reset();
  }
- if (keyPressed&&(pause==true)&&keyCode!=48) { 
-takaisin();
- }
  }
 
    
