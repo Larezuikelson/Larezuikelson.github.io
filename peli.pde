@@ -499,7 +499,7 @@ c=255;
   
 
    }
-      if (keyPressed&&(pause==true)&&keyCode!=48) { 
+      if (keyPressed&&(pause==true)&&key!='0') { 
 takaisin();
    }
  if (keyCode == 32){
